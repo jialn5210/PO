@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const x=+prompt("Digite um numero");
+        const n=+prompt("Digite um numero");
+        pow(x,n);
+        function pow(x,n){
+            let result="";
+            if(n<=1){
+                alert("O valor tem que ser maior que 1");
+            }else{
+                result=+ `${x**n}`;
+            }
+            alert(result);
+        }
+    </script>
+</body>
+
+</html>

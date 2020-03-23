@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num1=+prompt("Digite o primeiro numero");
+        const num2=+prompt("Digite o segundo numero");
+        const operator=prompt("Digite o operador");
+
+        calc(num1,num2,operator);
+
+        function calc(num1,num2,operator)
+        {
+            switch(operator){
+                case '+':
+                alert(`Resultado é ${num1 + num2}`);
+                break;
+                case '-':
+                alert(`Resultado é ${num1 - num2}`);
+                break;
+                case '*':
+                alert(`Resultado é ${num1 * num2}`);
+                break;
+                case '/':
+                if(num2==0){
+                    alert("Nao e possivel");
+                }
+                else{
+                alert(`Resultado é ${num1 / num2}`);
+                }
+                break;
+                default:
+                alert("operador invalido")
+                break;
+            
+            }
+        }
+    </script>
+</body>
+</html>
